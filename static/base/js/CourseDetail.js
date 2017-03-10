@@ -1,4 +1,4 @@
-function temp(){
+// function temp(){
 	var ms1div = $("#like");
 	var ms1 = $("#like img");
 	var ms2div = $("#dislike");
@@ -15,4 +15,4 @@ function temp(){
 		ms2div.css({"border-color":"#29b06c", "color":"#29b06c"});
 		ms2.css({"background-color":"#29b06c"});
 	});
-}
+// }
