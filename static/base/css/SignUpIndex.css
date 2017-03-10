@@ -1,0 +1,427 @@
+html{
+    font-size: 14px;
+}
+#_Web_Elements{
+    background: #FFF url("../img/signUp/u8.png") no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    padding: 0px;
+}
+#_Web_Elements a{
+    text-decoration: none;
+    font-size: 1.7rem;
+    display: inline-block;
+    background-color: #91eec5;
+    color: #303e59;
+    border-radius: 0.5rem;
+    padding: 0.5rem 3.5rem;
+    position: absolute;
+    bottom: 4.5rem;
+    left: 12rem;
+}
+.Inf_title1{
+    height:4rem;
+    line-height: 4rem;
+    margin-top: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.div_line1{
+    background-color: #00a050;
+    display: inline-block;
+    height:0.4rem;
+    width: 40%;
+    margin-top: 2rem;
+}
+.div_line1:first-child{
+    float: left;
+}
+.div_line1:last-child{
+    float: right;
+}
+.div_line1+span{
+    width: 12rem;
+    text-align: center;
+    display: inline-block;
+    font-size: 2.2rem;
+    color: #00a050;
+    font-weight: bold;
+}
+.Inf_main1{
+    height: 11rem;
+    padding: 0 6%;
+}
+.Inf_main1 .col-left{
+    width: 47%;
+    float: left;
+}
+.Inf_main1 .col-right{
+    width: 47%;
+    float: right;
+}
+.Inf_main1 .Inf_img1{
+    background-color: #00a050;
+    border-radius: 50%;
+    width: 7rem;
+    height: auto;
+    padding: 1.3rem;
+    float: left;
+    margin: 1.3rem 1rem 1rem 0;
+}
+.Inf_main1 .Inf_img1 img{
+    width: 100%;
+    height:auto;
+}
+.Inf_main1 p span{
+    height: 5rem;
+    color: black;
+    line-height: 5rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    display: block;
+    margin:0;
+}
+.Inf_main1 p{
+    display: block;
+    font-size: 1.2rem;
+    color: #6b6b6b;
+}
+.Inf_title2{
+    height:4rem;
+    line-height: 4rem;
+    margin-top: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.div_line2{
+    background-color: #00a050;
+    display: inline-block;
+    height:0.4rem;
+    width: 33%;
+    margin-top: 2rem;
+}
+.div_line2:first-child{
+    float: left;
+}
+.div_line2:last-child{
+    float: right;
+}
+.div_line2+span{
+    width: 26rem;
+    display: inline-block;
+    font-size: 2.2rem;
+    color: #00a050;
+}
+.Inf_main2{
+    text-align: center;
+    margin-top:3.5rem;
+    padding: 0 3%;
+}
+.Inf_main2 .col-sm-2 img{
+    width: 72%;
+}
+.Inf_main2 .col-sm-2 p:first-of-type{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+.Inf_main2 .col-sm-2 p:last-of-type{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #989898;
+}
+.Inf_title3{
+    height:4rem;
+    line-height: 4rem;
+    margin-top: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.div_line3{
+    background-color: #00a050;
+    display: inline-block;
+    height:0.4rem;
+    width: 40%;
+    margin-top: 2rem;
+}
+.div_line3:first-child{
+    float: left;
+}
+.div_line3:last-child{
+    float: right;
+}
+.div_line3+span{
+    width: 12rem;
+    text-align: center;
+    display: inline-block;
+    font-size: 2.2rem;
+    color: #00a050;
+}
+.Inf_main3{
+    border-top: 0.5rem solid #00a050;
+    width:80%;
+    margin:4rem auto;
+}
+.Inf_main3>div{
+    border-right:1px solid #00a050;
+    border-left:1px solid #00a050;
+    border-bottom:1px solid #00a050;
+    width: 96%;
+    margin:0px auto;
+    padding: 2rem;
+}
+.Inf_main3 div .Inf_main3_top>img{
+    width: 6rem;
+    height: auto;
+    vertical-align: top;
+}
+.Inf_main3 div .Inf_main3_top .Inf_Class3{
+    display: inline-block;
+    margin-left: 3.5rem;
+}
+.Inf_main3 div .Inf_main3_top .Inf_Class3 p:first-child{
+    font-size: 2.2rem;
+    font-weight: bolder;
+}
+.Inf_main3 div .Inf_main3_top .Inf_Class3 p span{
+    width: 0.5rem;
+    height: 2.6rem;
+    display: inline-block;
+    background-color: #00a050;
+}
+.Inf_main3 div .Inf_main3_top .Inf_Class3 p:last-child{
+    font-size: 1.5rem;
+    color: #989898;
+}
+.Inf_main3 div .Inf_main3_top .Inf_Class3 p span{
+    vertical-align: middle;
+    margin-right: 1.2rem;
+}
+.Inf_main3:nth-child(2) div .Inf_main3_top .Inf_Class3 p span:last-child{
+    margin-left:9rem;
+}
+.Inf_main3:nth-child(3) div .Inf_main3_top .Inf_Class3 p span:last-child{
+    margin-left:4.2rem;
+}
+.Inf_main3:nth-child(4) div .Inf_main3_top .Inf_Class3 p span:last-child{
+    margin-left:1.8rem;
+}
+.Inf_main3_bottom{
+    margin-top:2rem;
+    margin-bottom: 2rem;
+}
+.Inf_main3_bottom div{
+     display: inline-block;
+     padding-left: 3rem;
+     position: relative;
+ }
+.Inf_main3_bottom div>p{
+    font-size: 1.2rem;
+    color: #FFF;
+    display: inline-block;
+}
+.Inf_main3_bottom div:nth-child(odd)>p{
+    padding: 0.3rem 1.5rem 0.2rem 2rem;
+    position:absolute;
+    top: -0.3rem;
+    right: -0.1rem;
+}
+.Inf_main3_bottom div:nth-child(even){
+    display: inline-block;
+    padding-left: 3rem;
+    position: relative;
+}
+.Inf_main3_bottom div:nth-child(even)>p{
+    padding: 0.3rem 1.5rem 0.2rem 2rem;
+    position:absolute;
+    bottom: -1rem;
+    right: 0rem;
+}
+.Inf_main3:nth-child(2) .Inf_main3_bottom div:nth-child(n+1){
+    margin-left: 0.7rem;
+}
+.Inf_main3:nth-child(2) .Inf_main3_bottom div:nth-child(1){
+    border-top: #fdcb66 0.5rem solid;
+    width: 10rem;
+}
+.Inf_main3:nth-child(2) .Inf_main3_bottom div:nth-child(1)>p {
+    background: url("../img/signUp/u121.png") no-repeat top left;
+    background-size: cover;
+}
+.Inf_main3:nth-child(2) .Inf_main3_bottom div:nth-child(2){
+    border-bottom: #fd9801 0.5rem solid;
+    width: 10rem;
+}
+.Inf_main3:nth-child(2) .Inf_main3_bottom div:nth-child(2)>p{
+    background: url("../img/signUp/u124.png") no-repeat top left;
+    background-size: cover;
+}
+.Inf_main3:nth-child(2) .Inf_main3_bottom div:nth-child(3){
+    border-top: #fa6621 0.5rem solid;
+    width: 10rem;
+}
+.Inf_main3:nth-child(2) .Inf_main3_bottom div:nth-child(3)>p{
+    background: url("../img/signUp/u127.png") no-repeat top left;
+    background-size: cover;
+    right: -0.09rem;
+}
+.Inf_main3:nth-child(2) .Inf_main3_bottom div:nth-child(4){
+    border-bottom: #cb3302 0.5rem solid;
+    width: 13rem;
+}
+.Inf_main3:nth-child(2) .Inf_main3_bottom div:nth-child(4)>p{
+    background: url("../img/signUp/u134.png") no-repeat top left;
+    background-size: cover;
+}
+.Inf_main3:nth-child(2) .Inf_main3_bottom div:nth-child(5){
+    border-bottom: #983301 0.5rem solid;
+    width: 10rem;
+}
+.Inf_main3:nth-child(2) .Inf_main3_bottom div:nth-child(5)>p{
+    background: url("../img/signUp/u137.png") no-repeat top left;
+    background-size: cover;
+    top: 0;
+}
+
+.Inf_main3:nth-child(3) .Inf_main3_bottom div:nth-child(n+1){
+    margin-left: 1.2rem;
+}
+.Inf_main3:nth-child(3) .Inf_main3_bottom div{
+    width: 13rem;
+}
+.Inf_main3:nth-child(3) .Inf_main3_bottom div:nth-child(1){
+    border-top: #fdcb66 0.5rem solid;
+}
+.Inf_main3:nth-child(3) .Inf_main3_bottom div:nth-child(1)>p {
+    background: url("../img/signUp/u121.png") no-repeat top left;
+    background-size: cover;
+}
+.Inf_main3:nth-child(3) .Inf_main3_bottom div:nth-child(2){
+    border-bottom: #fd9801 0.5rem solid;
+}
+.Inf_main3:nth-child(3) .Inf_main3_bottom div:nth-child(2)>p{
+    background: url("../img/signUp/u124.png") no-repeat top left;
+    background-size: cover;
+}
+.Inf_main3:nth-child(3) .Inf_main3_bottom div:nth-child(3){
+    border-top: #fa6621 0.5rem solid;
+}
+.Inf_main3:nth-child(3) .Inf_main3_bottom div:nth-child(3)>p{
+    background: url("../img/signUp/u127.png") no-repeat top left;
+    background-size: cover;
+    right: -0.08rem;
+}
+.Inf_main3:nth-child(3) .Inf_main3_bottom div:nth-child(4){
+    border-bottom: #cb3302 0.5rem solid;
+}
+.Inf_main3:nth-child(3) .Inf_main3_bottom div:nth-child(4)>p{
+    background: url("../img/signUp/u162.png") no-repeat top left;
+    background-size: cover;
+}
+
+.Inf_main3:nth-child(4) .Inf_main3_bottom div:nth-child(n+1){
+    margin-left: 1.2rem;
+}
+.Inf_main3:nth-child(4) .Inf_main3_bottom div:nth-child(1){
+    width: 23rem;
+}
+.Inf_main3:nth-child(4) .Inf_main3_bottom div:nth-child(1){
+    border-top: #fdcb66 0.5rem solid;
+}
+.Inf_main3:nth-child(4) .Inf_main3_bottom div:nth-child(1)>p {
+    background: url("../img/signUp/u178.png") no-repeat top left;
+    background-size: cover;
+}
+.Inf_main3:nth-child(4) .Inf_main3_bottom div:nth-child(2){
+    width: 32rem;
+}
+.Inf_main3:nth-child(4) .Inf_main3_bottom div:nth-child(2){
+    border-bottom: #fd9801 0.5rem solid;
+}
+.Inf_main3:nth-child(4) .Inf_main3_bottom div:nth-child(2)>p{
+    background: url("../img/signUp/u181.png") no-repeat top left;
+    background-size: cover;
+    border-top-right-radius: 0.5rem;
+}
+.Inf_title4{
+    height:4rem;
+    line-height: 4rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.div_line4{
+    background-color: #00a050;
+    display: inline-block;
+    height:0.4rem;
+    width: 33%;
+    margin-top: 2rem;
+}
+.div_line4:first-child{
+    float: left;
+}
+.div_line4:last-child{
+    float: right;
+}
+.div_line4+span{
+    width: 26rem;
+    display: inline-block;
+    font-size: 2.2rem;
+    color: #00a050;
+}
+.Inf_main4{
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+.Inf_main4>div{
+    padding: 0 4rem;
+}
+.Inf_main4>div>div{
+    text-align: center;
+    border: #00a050 0.4rem solid;
+    padding: 0;
+}
+.Inf_main4>div>div p:first-child{
+    font-size: 1.9rem;
+    color: #FFF;
+    background-color: #00a050;
+    padding: 0.3rem 0;
+    margin-bottom: 0;
+}
+.Inf_main4>div>div p:last-of-type{
+    font-size:1.2rem;
+    color: #989898;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.Inf_main4 div:nth-child(1)>div>div{
+    background-color: #fd6520;
+}
+.Inf_main4 div:nth-child(2)>div>div{
+    background-color: #3eb7aa;
+}
+.Inf_main4 div:nth-child(3)>div>div{
+    background-color: #fcd47b;
+}
+.Inf_main4>div>div>div img{
+    height: 15rem;
+    width: auto;
+}
+.Inf_main4>div>div a{
+    display: inline-block;
+    background-color: #00a050;
+    color: #FFF;
+    font-size:1.6rem;
+    padding: 0.6rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+}
+.Inf_main4>div>div a:hover{
+    text-decoration: none;
+}

@@ -1,0 +1,194 @@
+@-ms-viewport       { width: device-width; }
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+
+*{
+	font-family:'Microsoft YaHei', sans-sarif !important;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+body{
+	background-color:#FFF;
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+.top-content{
+	position: relative;
+	padding-top: 20px;
+}
+.col_logo, .col_nav, .col_login{
+	display: inline-block;
+}
+.col_logo{
+	vertical-align: text-bottom;
+	height: 90px;
+	width: auto;
+}
+.col_login{
+	float: right;
+}
+#nav_bar{
+	margin:0;
+}
+#nav_bar li.NLast a{
+	height: 40px;
+	color:#000;
+}
+#nav_bar li.NLast a:hover{
+	color:#FFF;
+	background-color:#00a150;
+}
+.col_nav #nav_bar #_first{
+	color: #fff;
+	background-color:#00a150;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+#_first a{
+	color:#FFF!important;
+}
+#_menu{
+	position:relative;
+	color:#00a150;
+	background: none;
+	padding-left:0px;
+}
+#_menu a{
+	color:#00a150;
+}
+#_menu a:hover {
+	color: #00a150;
+}
+#_menu .dropMenu li {
+	color:#00a150;
+	text-align: center;
+	height:40px;
+	line-height: 40px;
+	border-bottom: 2px solid #f0f0f0;
+}
+#_menu .dropMenu li a{
+	color:#00a150;
+	text-align: center;
+	text-decoration:none;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	padding:0px;
+	width:105px;
+}
+#_menu .dropMenu li a:hover{
+	color:#FFF;
+	background-color: #00a150;
+	border: 0 solid;
+}
+#_menu .dropMenu {
+	display: none;
+	z-index:1000;
+	list-style: none;
+	position:absolute;
+	left:0px;
+	right:40px;
+	width:105px;
+	background-color: #FFF;
+	margin-top:-2px;
+}
+#_menu:hover .dropMenu {
+	display: block;
+}
+.col_login{
+	vertical-align: bottom;
+}
+
+#_login, #team-members{
+	padding-left:0;
+	padding-right:0;
+	position: absolute;
+	right: 12px;
+	top: 0;
+}
+#_search_box{
+	border:1px solid #00a150;
+	height:24px;
+	width:73%;
+	border-radius: 0px;
+}
+#_search_box_button{
+	height:24px;
+	width: 34px;
+	padding:0px;
+	background:url('../../img/index/search_logo.jpg') no-repeat center;
+	background-size: cover;
+	display: inline-block;
+	border:0 solid;
+	border-radius:0;
+	vertical-align:bottom;
+	cursor:pointer;
+}
+#_login{
+	display: inline-block;
+	margin-top: 15px;
+}
+#_login input{
+	border-radius: 20px;
+}
+#_login input, #login button{
+	height:22px;
+}
+#_search{
+	position: absolute;
+	bottom: 15px;
+	right: 0;
+}
+#name, #pass-word{
+	width:130px;
+}
+#tail{
+	background-color: #00a150;
+	color:#FFF;
+	width:100%;
+}
+#tail a{
+	color:#FFF;
+	font-weight:lighter;
+}
+#team-members{
+	background-color:#FFF;
+	height:42px;
+	margin-top: 15px;
+}
+#_picture{
+	display:none;
+	z-index: 1;
+	background-color:#FFF;
+	padding:0px;
+	margin:0px;
+}
+#_picture a{
+	background-color: #FFF;
+	margin: 0px;
+}
+#_picture a img{
+	background-color: #FFF;
+	width: auto;
+	height:40px;
+}
+#vip{
+	background-color: #FFF;
+	right:0px;
+	z-index: 1;
+	padding:0px;
+	margin:0px;
+}
+#vip #per_icon{
+	display: inline-block;
+}
+#vip img{
+	height:40px;
+	width: auto;
+	vertical-align: middle;
+	display: inline-block;
+}

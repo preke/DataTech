@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block body %}
+{% load staticfiles %}
+<script type="text/javascript" src="{% static 'base/js/Indroduce.js'  %}"></script>
+    <link rel="stylesheet" href="{% static 'base/css/Introduce.css' %}">
+
+
+    <div class="main row">
+    <div id="_list" class="col-lg-3 col-xs-3 col-sm-3">
+        <ul>
+            <li id="current" class="Club">俱乐部简介</li>
+            <li class="Center">中心简介</li>
+            <li class="LAB">实验室简介</li>
+        </ul>
+    </div>
+    <div id="ClubIntro" class="col-lg-9 col-xs-9 col-sm-9">
+        <p class="title">数据技术俱乐部</p>
+        <div class="Intro_main1">
+            <p class="Intro_main_title"><span></span>整体介绍</p>
+            <p>数据技术俱乐部隶属于中山大学数据科学与计算机学院学生学术发展中心，前身为云计算俱乐部，成立于2012年。2016年正式更名为数据技术俱乐部，并与移动互联网与金融大数据实验室达成合作。</p>
+        </div>
+        <div class="Intro_main2">
+            <p class="Intro_main_title"><span></span>组织架构</p>
+            <img src="{% static 'base/img/Introduce/u28.png' %}">
+        </div>
+        <div class="Intro_main3">
+            <p class="Intro_main_title"><span></span>指导老师</p>
+            <div class="row intro_main3_intro">
+                <div class="col-lg-3 col-xs-3 col-sm-3">
+                    <img src="{% static 'base/img/Introduce/u34.png' %}">
+                </div>
+                <div class="col-lg-9 col-xs-9 col-sm-9">
+                    <p>郑子彬</p><p>副教授，博士生导师</p>
+                    <p>
+                        主要研究方向为移动互联网、大数据挖掘、软件工程、服务计算。近年共出版Springer英文学术专著1部、发表国际期刊及国际会议论文100余篇。2010年获得软件工程领域顶级旗舰会议国际软件工程大会（ICSE）ACM SIGSOFT Distinguished Paper Award。担任国际服务学会青年委员会中国区首任主席。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="Intro_main3">
+            <p class="Intro_main_title"><span></span>主席团</p>
+            <div class="row intro_main3_intro">
+                <div class="col-lg-3 col-xs-3 col-sm-3">
+                    <img src="{% static 'base/img/Introduce/u44.png' %}">
+                </div>
+                <div class="col-lg-9 col-xs-9 col-sm-9">
+                    <p>左谭励</p><p>顾问</p>
+                    <p>
+                        2013级本科生，中心顾问、中大ACM校队前队长，多次参加亚洲区预赛获得金牌；曾经担任过广东省信息学竞赛总评委、ACMM学会负责人、微软俱乐部技术部长。
+                    </p>
+                </div>
+            </div>
+            <div class="row intro_main3_intro">
+                <div class="col-lg-3 col-xs-3 col-sm-3">
+                    <img src="{% static 'base/img/Introduce/u50.png' %}">
+                </div>
+                <div class="col-lg-9 col-xs-9 col-sm-9">
+                    <p>李萌雪</p><p>主席</p>
+                    <p>
+                        曾担任：中山大学学生软件技术发展中心项目公关部部长；IBM俱乐部产品部部长；数据科学与计算机学院礼仪队副队长。曾获得：第十届软件创意设计大赛 三等奖；2015“花旗杯”中山大学金融创新应用大赛 三等奖；第十一届软件创新开发大赛 优胜奖。曾负责：在线自助点餐平台——“杯口”线上运营工作；
+                    </p>
+                </div>
+            </div>
+            <div class="row intro_main3_intro">
+                <div class="col-lg-3 col-xs-3 col-sm-3">
+{#                    <img src="{% static 'base/img/Introduce/u34.png' %}">#}
+                </div>
+                <div class="col-lg-9 col-xs-9 col-sm-9">
+                    <p>王先淦</p><p>副主席（主管研发部）</p>
+                    <p>
+                        曾获美国大学生数学建模大赛一等奖、全国大学生数学建模大赛广东赛区省级三等奖、中山大学指点传媒杯ACM大赛校级二等奖。擅长web端开发，截止目前，有1个大型项目的后端开发经历，3个中小型项目的全栈开发及团队项目管理工作的实践经历
+                    </p>
+                </div>
+            </div>
+
+            <div class="row intro_main3_intro">
+                <div class="col-lg-3 col-xs-3 col-sm-3">
+                    <img src="{% static 'base/img/Introduce/u99.png' %}">
+                </div>
+                <div class="col-lg-9 col-xs-9 col-sm-9">
+                    <p>周中柱</p><p>副主席（主管数技部）</p>
+                    <p>
+                        大一学年获得国家奖学金，曾获大学生创新训练图像处理省级项目，获全国大学生数学建模二等奖，并在院内参与实验室医学影像云平台数据处理与全栈的开发，曾获acm校赛三等奖，以第二作者出版《c语言程序设计》。（担任中山大学校青马班实践委员，班级团支书，中山大学数据科学与计算机学院院团委委员，获院优秀团干。）
+
+                    </p>
+                </div>
+            </div>
+            <div class="row intro_main3_intro">
+                <div class="col-lg-3 col-xs-3 col-sm-3">
+                    <img src="{% static 'base/img/Introduce/u74.png' %}">
+                </div>
+                <div class="col-lg-9 col-xs-9 col-sm-9">
+                    <p>郑柏川</p><p>副主席（主管行政部）</p>
+                    <p>
+                        曾担任：中山大学学生软件技术发展中心品牌运营部副部长
+                        曾获得：第十一届软件创意大赛 优胜奖
+                        曾负责：courstack网站后台搭建
+                    </p>
+                </div>
+            </div>
+            <div class="row intro_main3_intro">
+                <div class="col-lg-3 col-xs-3 col-sm-3">
+                    <img src="{% static 'base/img/Introduce/u100.png' %}">
+                </div>
+                <div class="col-lg-9 col-xs-9 col-sm-9">
+                    <p>李子杰</p><p>副主席（主管综合技术部）</p>
+                    <p>
+                        曾担任中山大学学生软件技术发展中心宣传部副部长，参加过一些全栈项目的后端开发。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="CenterIntro" class="col-lg-9 col-xs-9 col-sm-9">
+        <p class="title">中山大学数据科学与计算机学院<br>学生学术发展中心</p>
+        <p class="Center_content">中山大学数据科学与计算机学院学生学术发展中心（以下简称“中心”），前身为中山大学学生软件技术发展中心。2010年4月，为顺应计算机及软件人才培养，贴近互联网新形势下人才需求，在软件学院院长的的主持下，“信息技术发展中心（软件创新平台）”更名为“软件技术发展中心”，中山大学学生软件技术发展中心正式成立。</p>
+        <p class="Center_content">“中山大学学生软件技术发展中心”的主要任务是组织学生学术科技活动，提高学生科研素质，培养学生创新能力和应用能力，提高和发展中山大学学生科技活动水平。</p>
+        <p class="Center_content">cl下设6个管理部与10个俱乐部，分别是：秘书处、技术培训部、宣传部、竞赛管理部、项目公关部、品牌运营部，UED（用户体验研究）俱乐部、IT文化俱乐部、移动联盟俱乐部、ICPC俱乐部主席、机器人俱乐部、“羽墨轩”数字媒体技术俱乐部、现代互联网应用俱乐部、金融IT俱乐部、数据技术俱乐部、“缘木轩“游戏俱乐部。</p>
+        <p class="Center_content">在过去的几年里，在各级领导的关心下，在老师们的悉心指导下，在全体成员的共同努力下，“中心”在组织建设、活动开展、学生成果收集等方面开展了一系列工作，取得了良好的成绩。在2014年5月获“中山大学示范性院系学生社团”全校评选总决赛第一名。中心曾多次成功举办或承办学生科技竞赛和活动，如中山大学金融与信息技术应用大赛暨“花旗杯”金融软件设计大赛、各届软件创新大赛、“金蝶”中国软件设计大赛、“IBM”校园精英挑战赛、“博创杯”全国大学生嵌入式设计大赛(华南赛区)、创意未来2009年中国CG创意产业联盟百校巡讲等。其中，由中心承办的的学生科技活动“软件创意创新设计大赛” 中山大学第二届大学生思想政治教育育人精品实践活动评选答辩大会中成功收获校级“大学生思想政治教育育人精品实践活动项目”称号。以中心为主导组织团队参加国内省内的众多科技竞赛，取得全国及省级优异的成绩。在组织学生参加科技创新活动、营造科技学术竞赛氛围、培养学生创新能力和应用能力、拓宽专业视野等方面发挥着重要作用。</p>
+    </div>
+    <div id="LabIntro" class="col-lg-9 col-xs-9 col-sm-9">
+        <p class="title">移动互联网与金融大数据实验室</p>
+        <p>实验室以分布式平台为基础，结合多种机器学习与数据挖掘算法，在移动互联网、金融、服务计算等各个应用领域深入研究，挖掘信息，创造价值。</p>
+        {% load staticfiles %}
+        <img src="{% static 'base/img/Introduce/u20.jpg' %}">
+        <p>了解更多：<a href="http://inpluslab.sysu.edu.cn">http://inpluslab.sysu.edu.cn</a></p>
+    </div>
+</div>
+
+<!-- 主体结束 -->
+
+{% endblock %}
+{#that's enough#}

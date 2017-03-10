@@ -1,0 +1,87 @@
+html{
+    font-size: 14px;
+}
+#_list{
+    background-color: #01a253;
+    text-align: center;
+    padding: 0;
+    min-height: 62rem;
+}
+#_list ul{
+    list-style: none;
+}
+#_list ul li{
+    color:#FFF;
+    font-size: 1.7rem;
+    padding: 0.8rem 0;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 3.5rem 0;
+}
+#_list ul li:hover{
+    background-color: #FFF;
+    color:#01a253;
+}
+#_list #current{
+    background-color: #FFF;
+    color:#01a253;
+}
+.title{
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #01a153;
+    padding: 4rem 1.5rem 1.5rem 1.5rem;
+}
+.title img{
+    height: 4rem;
+    width: auto;
+    vertical-align: bottom;
+    margin-right: 3rem;
+}
+#entryForm{
+   padding-left: 7rem;
+}
+._label{
+    float: left;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #01a153;
+    line-height: 4rem;
+    margin-right: 1rem;
+}
+._input{
+    line-height: 4rem;
+    font-size: 1.5rem;
+}
+._input input:not([name='_sex']){
+    display: inline-block;
+    height: 2rem;
+    width: 17rem;
+}
+[for="_intr"]{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #01a153;
+    margin-left: 0px;
+    margin-bottom: 1.5rem;
+}
+[name='_intr']{
+    width:24rem;
+    min-height: 15rem;
+    overflow-y: auto;
+    resize: none;
+}
+#entryForm button{
+    background-color: #01a153;
+    border: 0;
+    color: #FFF;
+    font-size: 1.7rem;
+    padding: 0.5rem 4rem;
+    -webkit-border-radius:1rem;
+    -moz-border-radius:1rem;
+    border-radius: 1rem;
+    margin-top: 2.2rem;
+    margin-bottom: 5rem;
+    margin-left: 6rem;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block body %}
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'base/css/SignUp_RTD_CTD_DTD.css' %}">
+    <script type="text/javascript" src="{% static 'base/js/SignUp_RTD_CTD_DTD.js' %}"></script>
+    <div class="main row">
+    <div id="_list" class="col-lg-3 col-xs-3 col-sm-3">
+        <ul>
+            <li id="current" class="CTD">综合技术部</li>
+            <li class="RTD">研发部</li>
+            <li class="DTD">数技部</li>
+        </ul>
+    </div>
+    <div id="entryForm" class="col-lg-9 col-xs-9 col-sm-9">
+        {% load staticfiles %}
+        <p class="title"><img src="{% static 'base/img/signUp/u154.png' %}"><span>综合技术部</span></p>
+        <form method="post">
+            {% csrf_token %}
+            <div class="_label">
+                <p>姓名<br>性别<br>邮箱<br>QQ<br>github<br></p>
+            </div>
+            <div class="_input">
+                <input type="hidden" name="type" value="1">
+                <input type="text" name="_name" required="required"><br>
+                <input type="radio" name="_sex" required="required" value="男">&nbsp;男&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="_sex" required="required" value="女">&nbsp;女<br>
+                <input type="email" name="_email" required="required"><br>
+                <input type="number" name="_qq" required="required"><br>
+                <input type="text" name="_git" required="required"><br>
+            </div>
+            <div style="clear: both"></div>
+            <label for="_intr">个人简介（可选）</label><br>
+            <textarea name="_intr" id="_intr"></textarea>
+            <br>
+            <button type="submit">提交</button>
+        </form>
+    </div>
+</div>
+<!-- 主体结束 -->
+{% endblock %}
+
+{##首先, 嗯, SignUpIndex.html是没用的,我只是加进来作参照#}
+{#其次,register这句话,上面有了..#}

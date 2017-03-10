@@ -1,0 +1,29 @@
+$("#_list").height($("#ClubIntro").outerHeight());
+$(".Club").click(function(){
+    $('#current').removeAttr("id");
+    $(this).attr("id","current");
+    $("#_list").height($("#ClubIntro").outerHeight());
+    $("#ClubIntro").css("display","block");
+    $("#LABIntro").css("display","none");
+    $("#CenterIntro").css("display","none");
+    $(document).attr("title","俱乐部简介");
+});
+$(".Center").click(function(){
+    $('#current').removeAttr("id");
+    $(this).attr("id","current");
+    $("#_list").height($("#CenterIntro").outerHeight());
+    $("#ClubIntro").css("display","none");
+    $("#LABIntro").css("display","none");
+    $("#CenterIntro").css("display","block");
+    $(document).attr("title","中心简介");
+});
+$(".LAB").click(function(){
+    $('#current').removeAttr("id");
+    $(this).attr("id","current");
+    $("#_list").height($("#LabIntro").outerHeight());
+    $("#ClubIntro").css("display","none");
+    $("#LabIntro").css("display","block");
+    $("#CenterIntro").css("display","none");
+    $(document).attr("title","实验室简介");
+});
+//不是这个问题,重新加载了,但是还是...

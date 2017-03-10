@@ -1,0 +1,121 @@
+html{
+    font-size: 14px;
+}
+#_list{
+    background-color: #01a253;
+    text-align: center;
+    padding: 0;
+}
+#_list ul{
+    list-style: none;
+}
+#_list ul li{
+    color:#FFF;
+    font-size: 1.7rem;
+    padding: 0.8rem 0;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 3.5rem 0;
+}
+#_list ul li:hover{
+    background-color: #FFF;
+    color:#01a253;
+}
+#_list #current{
+    background-color: #FFF;
+    color:#01a253;
+}
+#ClubIntro{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 5rem;
+}
+.title{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+.Intro_main_title span{
+    height: 3rem;
+    width: 1rem;
+    display: inline-block;
+    background-color: #00a050;
+    vertical-align: bottom;
+    margin-right: 2.5rem
+}
+.Intro_main_title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top:2rem;
+}
+.Intro_main1 p:last-child{
+    margin: 2rem 1rem 0 3.5rem;
+    color: #989898;
+    font-size: 1.5rem;
+}
+.Intro_main2 img{
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+.Intro_main3 img{
+    margin: 2rem 3.5rem;
+    width: 10rem;
+    height: auto;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.intro_main3_intro p{
+    white-space: normal;
+}
+.intro_main3_intro .col-lg-9{
+    margin-top:2rem;
+}
+.intro_main3_intro .col-lg-9 p:nth-child(1){
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-right: 1.5rem
+}
+.intro_main3_intro .col-lg-9 p:nth-child(2){
+    color: #989898;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.intro_main3_intro .col-lg-9 p:nth-child(3){
+    width: 42rem;
+    font-size: 1.2rem;
+}
+#CenterIntro{
+    padding:3rem 5rem;
+}
+.Center_content{
+    font-size:1.5rem;
+    text-indent: 2em;
+}
+#CenterIntro{
+    display: none;
+}
+#LabIntro{
+    display:none;
+    padding: 5rem 6rem;
+}
+#LabIntro p:nth-child(2){
+    font-size:1.8rem;
+    margin: 2rem auto;
+    text-indent: 2em;
+}
+#LabIntro img{
+    width: 100%;
+    height:auto;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+#LabIntro p:last-child{
+    font-size:1.8rem;
+    text-align: left;
+
+}

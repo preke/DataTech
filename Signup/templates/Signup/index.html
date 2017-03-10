@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block body %}
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'base/css/SignUpIndex.css' %}">
+    <div class="container main">
+        <div id="_Web_Elements">
+            <a href="{% url 'Signup_more' %}">了解更多</a>
+        </div>
+        <div id="Inf_1">
+            <div class="row Inf_title1">
+                <span class="div_line1"></span>
+                <span>部门介绍</span>
+                <span class="div_line1"></span>
+            </div>
+            <div class="row Inf_main1">
+                <div class="col-left">
+{#                    {% static 'base/img/index/logo.png' %}#}
+                    <div class="Inf_img1">
+                        {% load staticfiles %}
+                        <img src="{% static 'base/img/signUp/u28.png' %}">
+                    </div>
+                    <p><span>综合技术部</span>笼络一批对技术感兴趣的初学者，进行多方位培训。定期选拔优秀学员，进入数技部或研发部</p>
+                </div>
+                <div class="col-right">
+                    <div class="Inf_img1"><img src="{% static 'base/img/signUp/u26.png' %}"></div>
+                    <p><span>研发部</span>定期开展沙龙，分享人工智能领域新的科技，带你从零开始，一起完成机器学习领域的相关项目。</p>
+                </div>
+            </div>
+            <div class="row Inf_main1">
+                <div class="col-left">
+                    <div class="Inf_img1"><img src="{% static 'base/img/signUp/u36.png' %}"></div>
+                    <p><span>数技部</span>内部选拔，由实验室师兄师姐带队参加大型数据挖掘类比赛；内部组队，参加各类型IT类赛事</p>
+                </div>
+                <div class="col-right">
+                    <div class="Inf_img1"><img src="{% static 'base/img/signUp/u44.png' %}"></div>
+                    <p><span>行政部</span>负责俱乐部的日常管理、活动宣传、信息审核、团队建设等工作。享受内部最优资源待遇</p>
+                </div>
+           </div>
+        </div>
+        <div id="Inf_2">
+            <div class="row Inf_title2">
+                <span class="div_line2"></span>
+                <span>我们能带给你什么</span>
+                <span class="div_line2"></span>
+            </div>
+            <div class="row Inf_main2">
+                <div class="col-lg-2 col-xs-2 col-sm-2">
+                    <img src="{% static 'base/img/signUp/u50.png' %}">
+                    <p>有项目 有人带</p>
+                    <p>积累项目经验<br>熟悉市场标准</p>
+                </div>
+                <div class="col-lg-2 col-xs-2 col-sm-2">
+                    <img src="{% static 'base/img/signUp/u52.png' %}">
+                    <p>有比赛 有人带</p>
+                    <p>丰富的比赛信息<br>专业的指导团队</p>
+                </div>
+                <div class="col-lg-2 col-xs-2 col-sm-2">
+                    <img src="{% static 'base/img/signUp/u54.png' %}">
+                    <p>实验室资源</p>
+                    <p>建立良好个人口碑<br>获得选择优先权</p>
+                </div>
+                <div class="col-lg-2 col-xs-2 col-sm-2">
+                    <img src="{% static 'base/img/signUp/u68.png' %}">
+                    <p>多类型培训课程</p>
+                    <p>科普讲座<br>专题讲座<br>技术沙龙</p>
+                </div>
+                <div class="col-lg-2 col-xs-2 col-sm-2">
+                    <img src="{% static 'base/img/signUp/u74.png' %}">
+                    <p>企业HR座谈会</p>
+                    <p>第一时间<br>跟踪行业动态<br>了解企业需求</p>
+                </div>
+                <div class="col-lg-2 col-xs-2 col-sm-2">
+                    <img src="{% static 'base/img/signUp/u80.png' %}">
+                    <p>志同道合的伙伴</p>
+                    <p>还有什么比一群<br>志同道合的伙伴<br>更让人兴奋</p>
+                </div>
+            </div>
+        </div>
+        <div id="Inf_3">
+            <div class="row Inf_title3">
+                <span class="div_line3"></span>
+                <span>培训课程</span>
+                <span class="div_line3"></span>
+            </div>
+            <div class="row Inf_main3">
+                <div>
+                    <div class="Inf_main3_top">
+                        <img src="{% static 'base/img/signUp/u147.png' %}">
+                        <div class="Inf_Class3">
+                            <p>科普讲座</p>
+                            <p>
+                                <span></span>面向全校
+                                <span></span>主讲人：导师/实验室大牛/企业工程师
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Inf_main3_bottom">
+                        <div>
+                            <p>计算广告</p>
+                        </div>
+                        <div>
+                            <p>推荐系统</p>
+                        </div>
+                        <div>
+                            <p>社交网络</p>
+                        </div>
+                        <div>
+                            <p>数据挖掘三部曲</p>
+                        </div>
+                        <div>
+                            <p>信用评估</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row Inf_main3">
+                <div>
+                    <div class="Inf_main3_top">
+                        <img src="{% static 'base/img/signUp/u147.png' %}">
+                        <div class="Inf_Class3">
+                            <p>专题讲座</p>
+                            <p>
+                                <span></span>面向综合技术部
+                                <span></span>主讲人：企业工程师/研发部大神
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Inf_main3_bottom">
+                        <div>
+                            <p>前沿扩展</p>
+                        </div>
+                        <div>
+                            <p>技术分享</p>
+                        </div>
+                        <div>
+                            <p>软件开发</p>
+                        </div>
+                        <div>
+                            <p>产品设计</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row Inf_main3">
+                <div>
+                    <div class="Inf_main3_top">
+                        <img src="{% static 'base/img/signUp/u147.png' %}">
+                        <div class="Inf_Class3">
+                            <p>技术沙龙</p>
+                            <p>
+                                <span></span>面向研发部/数技部
+                                <span></span>主讲人：企业工程师/研发部大神
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Inf_main3_bottom">
+                        <div>
+                            <p>针对不同方向或课题的小型研讨会</p>
+                        </div>
+                        <div>
+                            <p>根据项目需求，召集团队，由工作室带领完成项目</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Inf_4">
+            <div class="row Inf_title4">
+                <span class="div_line4"></span>
+                <span>我们需要这样的你</span>
+                <span class="div_line4"></span>
+            </div>
+            <div class="row Inf_main4">
+                <div class="col-lg-4 col-sm-4 col-xs-4">
+                    <div>
+                        <p>综合技术部</p>
+                        <div>
+                            <img src="{% static 'base/img/signUp/u88.png' %}">
+                        </div>
+                        <p>零门槛<br>报名即可入群<br>只需要你有兴趣有热情<br>还有一颗爱学习的心</p>
+                        <a href="{% url 'Signup_register' %}">马上报名</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-4 col-xs-4">
+                    <div>
+                        <p>研发部</p>
+                        <div>
+                            <img src="{% static 'base/img/signUp/u102.png' %}">
+                        </div>
+                        <p>对人工智能、深度学习……<br>有浓厚的兴趣<br>具有一定的开发能力<br>还有一颗爱学习的心</p>
+                        <a href="{% url 'Signup_register' %}">马上报名</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-4 col-xs-4">
+                    <div>
+                        <p>数技部</p>
+                        <div>
+                            <img src="{% static 'base/img/signUp/u118.png' %}">
+                        </div>
+                        <p>具有良好的团队协作能力<br>对数据挖掘类或<br>其他IT类比赛感兴趣<br>还有一颗爱学习的心</p>
+                        <a href="{% url 'Signup_register' %}">马上报名</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

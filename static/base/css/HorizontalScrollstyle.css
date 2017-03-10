@@ -1,0 +1,139 @@
+a{
+	color: inherit;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #000;
+}
+#Horizontal-Scroll{
+	background: #FFF;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+#Horizontal-Scroll{
+	height: 300px;
+	padding: 20px 0px;
+	list-style: none;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+#Horizontal-Scroll ul li{
+	display: inline-block;
+}
+#Horizontal-Scroll ul li:first-child {
+	margin-left: 30px;
+}
+#Horizontal-Scroll ul li:last-child {
+	margin-right: 30px;
+}
+#Horizontal-Scroll ul li:not(:first-child) {
+	margin-left: 280px;
+}
+#Horizontal-Scroll ul li p{
+	white-space: normal;
+}
+#Horizontal-Scroll::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+#Horizontal-Scroll::-webkit-scrollbar
+{
+	width: 100px;
+	height:12px;
+	border-radius: 10px;
+	background-color: #D0D2D8;
+}
+#Horizontal-Scroll::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #aaa;
+}
+.flip-container {
+	perspective: 1000px;
+	transform-style: preserve-3d;
+	margin:0px 0px 20px 0px;
+	padding:0px;
+}
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+	display: inline-block;
+}
+.flip-container:hover .back, .flipper:hover .back{
+	transform: rotateY(0deg);
+	-ms-transform:rotateY(0deg); 	/* IE 9 */
+	-moz-transform:rotateY(0deg); 	/* Firefox */
+	-webkit-transform:rotateY(0deg); /* Safari 和 Chrome */
+	-o-transform:rotateY(0deg); 	/* Opera */
+}
+.flip-container:hover .front, .flipper:hover .front{
+	transform: rotateY(180deg);
+	-ms-transform:rotateY(180deg); 	/* IE 9 */
+	-moz-transform:rotateY(180deg); 	/* Firefox */
+	-webkit-transform:rotateY(180deg); /* Safari 和 Chrome */
+	-o-transform:rotateY(180deg); 	/* Opera */
+}
+.front, .back {
+	padding-left: 2px;
+	width: 180px;
+	height: 220px;
+	text-align: center;
+}
+.front, .back {
+	backface-visibility: hidden;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+}
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+	-ms-transform:rotateY(0deg); 	/* IE 9 */
+	-moz-transform:rotateY(0deg); 	/* Firefox */
+	-webkit-transform:rotateY(0deg); /* Safari 和 Chrome */
+	-o-transform:rotateY(0deg); 	/* Opera */
+}
+.back{
+	z-index: 3;
+	transform: rotateY(180deg);
+	-ms-transform:rotateY(180deg); 	/* IE 9 */
+	-moz-transform:rotateY(180deg); 	/* Firefox */
+	-webkit-transform:rotateY(180deg); /* Safari 和 Chrome */
+	-o-transform:rotateY(180deg); 	/* Opera */
+}
+.front:hover{
+	transform: rotateY(180deg);
+	-ms-transform:rotateY(180deg); 	/* IE 9 */
+	-moz-transform:rotateY(180deg); 	/* Firefox */
+	-webkit-transform:rotateY(180deg); /* Safari 和 Chrome */
+	-o-transform:rotateY(180deg); 	/* Opera */
+}
+.back .button_ {
+	border:1px dashed #0F0;
+	width: 85px;
+	height: 35px;
+	line-height: 35px;
+	background-color: #4E58FA;
+	margin-left: 44px;
+	margin-right:44px;
+	border-radius: 5px;
+	text-decoration: none;
+	display: block;
+	padding:0px;
+}
+.back .button_:hover{
+	color: #fff;
+}
