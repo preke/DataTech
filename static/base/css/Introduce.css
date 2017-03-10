@@ -1,28 +1,61 @@
 html{
     font-size: 14px;
 }
+#back_list{
+    z-index: 0;
+    background-color: #01a153;
+}
 #_list{
+    position: fixed;
     background-color: #01a253;
     text-align: center;
-    padding: 0;
+    padding: 4rem 0;
+    z-index: 10;
+}
+#_list {
+    text-decoration: none;
+}
+#_list a{
+    text-decoration: none;
 }
 #_list ul{
     list-style: none;
 }
-#_list ul li{
+#_list>ul>li{
     color:#FFF;
-    font-size: 1.7rem;
-    padding: 0.8rem 0;
+    font-size: 1.5rem;
     display: block;
-    text-decoration: none;
     cursor: pointer;
-    margin: 3.5rem 0;
+    margin: 0;
+    line-height: 3rem;
 }
-#_list ul li:hover{
+#_list>ul>li>a{
+    color:inherit;
+    background-color: inherit;
+}
+#_list>ul>li:hover, #_list>ul>li>a:hover{
     background-color: #FFF;
     color:#01a253;
 }
-#_list #current{
+#_list .aboutUs ul{
+    background-color: #4dbc84;
+    color: #a3aaa6;
+    padding: 0 2rem;
+    font-size: 1.2rem;
+}
+#_list .aboutUs ul li{
+    background-color: #b2e2ca;
+    border: 1px solid #01a253;
+    padding:0 1em;
+}
+#_list>ul>li>ul>li:hover a{
+    color: #555!important;
+}
+#_list .aboutUs ul li a{
+    background-color: #b2e2ca;
+    color: #a0a0a0;
+}
+#_list #current, #_list #current>a{
     background-color: #FFF;
     color:#01a253;
 }
@@ -96,11 +129,7 @@ html{
     font-size:1.5rem;
     text-indent: 2em;
 }
-#CenterIntro{
-    display: none;
-}
 #LabIntro{
-    display:none;
     padding: 5rem 6rem;
 }
 #LabIntro p:nth-child(2){
@@ -117,5 +146,23 @@ html{
 #LabIntro p:last-child{
     font-size:1.8rem;
     text-align: left;
-
+}
+#ContactUs{
+    text-align: center;
+    padding-bottom: 10rem;
+}
+#ContactUs .contactItem{
+    display: inline-block;
+    margin: 1.2rem auto;
+}
+#ContactUs .contactItem p{
+    text-align: left;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+#ContactUs .contactItem img{
+    height: 8rem;
+    width: auto;
+    vertical-align: bottom;
+    margin-left: 6rem;
 }

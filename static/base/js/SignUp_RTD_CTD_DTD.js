@@ -7,7 +7,7 @@ $(function() {
         $("[name='_intr']").attr("required",false);
         $(document).attr("title","综合技术部");
         $("[name='type']").val(1);
-        //alert($("[name='type']").attr('name'));
+        // alert($("[name='type']").attr('name'));
         //alert($("._input[name='type']").val());
     });
     $('.DTD').click(function(){
@@ -28,6 +28,6 @@ $(function() {
         $("[name='_intr']").attr("required",true);
         $(document).attr("title","研发部");
         $("[name='type']").val(3);
-        //alert($("._input[name='type']").val());
+        // alert($("._input[name='type']").val());
     });
 });

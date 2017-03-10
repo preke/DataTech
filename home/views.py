@@ -17,7 +17,7 @@ def home(request):
     course_list = Course.objects.order_by('-reading_quantity')[:5]
     # print course_list
     SystemArticle_list = Article.objects.filter(category = 'SA')[:8]
-    project_list = Project.objects.all().order_by('project_name')[:8]
+    project_list = Project.objects.all()
     info = {'course_list':course_list, 'SystemArticle_list':SystemArticle_list, 'project_list':project_list}
     return render(request, 'home/home.html', info)
 

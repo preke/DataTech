@@ -4,7 +4,7 @@
 {% block body %}
     {% load staticfiles %}
     <link rel="stylesheet" href="{% static 'base/css/SignUp_RTD_CTD_DTD.css' %}">
-    <script type="text/javascript" src="{% static 'base/js/SignUp_RTD_CTD_DTD.js' %}"></script>
+    <!-- <script type="text/javascript" src="{% static 'base/js/SignUp_RTD_CTD_DTD.js' %}"></script> -->
     <div class="main row">
     <div id="_list" class="col-lg-3 col-xs-3 col-sm-3">
         <ul>
@@ -38,8 +38,10 @@
         </form>
     </div>
 </div>
+{% load staticfiles %}
+    <!-- <link rel="stylesheet" href="{% static 'base/css/SignUp_RTD_CTD_DTD.css' %}"> -->
+    <!-- <script type="text/javascript" src="{% static 'base/js/Public/bootstrap.min.js' %}"></script> -->
+    <script type="text/javascript" src="{% static 'base/js/SignUp_RTD_CTD_DTD.js' %}"></script>
 <!-- 主体结束 -->
 {% endblock %}
 
-{##首先, 嗯, SignUpIndex.html是没用的,我只是加进来作参照#}
-{#其次,register这句话,上面有了..#}

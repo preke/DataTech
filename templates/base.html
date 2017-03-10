@@ -62,7 +62,7 @@
   <link rel="stylesheet" href="{% static 'base/css/Public/bootstrap.min.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'base/css/Lunbo.css' %}">
   <script type="text/javascript" src="{% static 'base/js/Public/ie8.js' %}"></script>
-  <script type="text/javascript" src="{% static 'base/js/Lunbo.js' %}"></script>
+  
   <link rel="stylesheet" href="{% static 'base/css/style.css' %}">
   <link rel="stylesheet" href="{% static 'base/css/Public/header.css' %}">
   <link rel="stylesheet" href="{% static 'base/css/Public/no-response.css' %}">
@@ -75,7 +75,7 @@
 
 
 </head>
-
+ <div id="top"></div>
   <!--顶部开始-->
 <div class="container top-content">
   <img class="col_logo" src="{% static 'base/img/index/logo.png' %}" alt="DT">
@@ -168,15 +168,14 @@
     <br/><br/>
     <div class="row"><div class="col-xs-12 col-md-12 col-lg-12"><h3 style="font-weight:normal">数据技术俱乐部</h3></div></div>
     <div class="row"><div class="col-xs-12 col-md-12 col-lg-12"><h4 style="font-weight:100; letter-spacing:3px">Data Tech</h4></div></div>
-    <div class="row"><div class="col-xs-12 col-md-12 col-lg-12"><a href="##">关于我们</a>
+    <div class="row"><div class="col-xs-12 col-md-12 col-lg-12"><a href="{% url 'Signup_more' %}#top">关于我们</a>
     <label>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</label>
-    <a href="##">联系我们</a>
+    <a href="{% url 'Signup_more' %}#ContactUs">联系我们</a>
     <br/><br/><br/><br/><br/>
   </div>
   <!--尾部结束-->
 {% load staticfiles %}
   <script type="text/javascript" src='{% static "base/js/Public/bootstrap.min.js" %}'></script>
-  <!-- <link rel="stylesheet" href="{% static 'base/css/Public/bootstrap.min.css' %}"> -->
     <script type="text/javascript" src="{% static 'base/js/Public/header.js' %}"></script>
         <script type="text/javascript" src="{% static 'base/js/Indroduce.js'  %}"></script>
 </body>

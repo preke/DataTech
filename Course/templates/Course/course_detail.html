@@ -37,8 +37,12 @@
       </div>
       <div class="row">
           	<div class="_line4 col-xs-6 col-xs-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
-	          	<div id="like"><img src={% static 'base/img/picture/smile.png' %}>喜欢</div>
-                <div id="dislike"><img src="{% static 'base/img/picture/sad.png' %}">不喜欢</div>
+	          	<div id="like">
+                <img src="{% static 'base/img/picture/smile.png' %}">喜欢
+              </div>
+              <div id="dislike">
+                <img src="{% static 'base/img/picture/sad.png' %}">不喜欢
+                </div>
             </div>
       </div>
       <!-- 灯箱效果 -->
@@ -65,6 +69,7 @@
   </div>
 </div>
 
-
+{% load staticfiles %}
+<script type="text/javascript" src="{% static 'base/js/CourseDetail.js' %}"></script>
 
 {% endblock body %}
