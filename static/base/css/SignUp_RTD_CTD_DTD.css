@@ -85,3 +85,76 @@ html{
     margin-bottom: 5rem;
     margin-left: 6rem;
 }
+
+#goodcover {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 200%;
+    height: 200%;
+    background-color: black;
+    z-index: 11;
+    -moz-opacity: 0.8;
+    opacity: 0.50;
+    filter: alpha(opacity=80);
+}
+#Popup_RTD, #Popup_CTD_DTD{
+    display: none;
+    padding: 0.5rem 0 0 0;
+    border: 0.3rem solid #01a153;
+    position: fixed;
+    left: 45%;
+    top: 30%;
+    z-index: 12;
+    background-color: #01a153;
+}
+#Popup_RTD span, #Popup_CTD_DTD span{
+    text-align: center;
+    display: inline-block;
+    height:1.5rem;
+    width: 1.5rem;
+    float: right;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    border-radius: 50%;
+    border: 1px solid #FFF;
+    color: #FFF;
+    cursor: pointer;
+}
+.Popup_main{
+    background-color: #FFF;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    width: 30rem;
+    text-align: center;
+}
+
+.Popup_main p{
+    color: #01a153;
+    margin: 0;
+}
+#Popup_RTD .Popup_main p:first-of-type{
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1rem;
+}
+#Popup_RTD .Popup_main p:last-of-type{
+    font-weight: bold;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+}
+#Popup_RTD .Popup_main img{
+    height: 15rem;
+    width: auto;
+}
+#Popup_CTD_DTD .Popup_main p:first-of-type {
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    line-height: 4rem;
+}

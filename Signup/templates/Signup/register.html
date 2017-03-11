@@ -5,7 +5,7 @@
     {% load staticfiles %}
     <link rel="stylesheet" href="{% static 'base/css/SignUp_RTD_CTD_DTD.css' %}">
     <!-- <script type="text/javascript" src="{% static 'base/js/SignUp_RTD_CTD_DTD.js' %}"></script> -->
-    <div class="main row">
+<div class="main row">
     <div id="_list" class="col-lg-3 col-xs-3 col-sm-3">
         <ul>
             <li id="current" class="CTD">综合技术部</li>
@@ -16,28 +16,85 @@
     <div id="entryForm" class="col-lg-9 col-xs-9 col-sm-9">
         {% load staticfiles %}
         <p class="title"><img src="{% static 'base/img/signUp/u154.png' %}"><span>综合技术部</span></p>
-        <form method="post">
+        <form>
             {% csrf_token %}
             <div class="_label">
                 <p>姓名<br>性别<br>邮箱<br>QQ<br>github<br></p>
             </div>
             <div class="_input">
-                <input type="hidden" name="type" value="1">
-                <input type="text" name="_name" required="required"><br>
-                <input type="radio" name="_sex" required="required" value="男">&nbsp;男&nbsp;&nbsp;&nbsp;
-                <input type="radio" name="_sex" required="required" value="女">&nbsp;女<br>
-                <input type="email" name="_email" required="required"><br>
-                <input type="number" name="_qq" required="required"><br>
-                <input type="text" name="_git" required="required"><br>
+                <input type="hidden" name="type" id='1' value="1">
+                <input type="text" name="_name" id='2' required="required"><br>
+                <input type="radio" name="_sex"  required="required" value="男">&nbsp;男&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="_sex"  required="required" value="女">&nbsp;女<br>
+                <input type="email" name="_email" id='5' required="required"><br>
+                <input type="number" name="_qq" id='6' required="required"><br>
+                <input type="text" name="_git" id='7' required="required"><br>
             </div>
             <div style="clear: both"></div>
             <label for="_intr">个人简介（可选）</label><br>
             <textarea name="_intr" id="_intr"></textarea>
             <br>
-            <button type="submit">提交</button>
+            <!-- <button type="submit">提交</button> -->
+            <button type='button' onclick="aj()">提交</button>
+            <script type="text/javascript">
+
+                function aj(){
+                    var type= $("input[name='type']").val()
+                    var _name= $("input[name='_name']").val()
+                    var _sex= $("input[name='_sex']").val()
+                    var _email= $("input[name='_email']").val()
+                    var _qq= $("input[name='_qq']").val()
+                    var _git= $("input[name='_git']").val()
+                    var url = window.location.href
+                    $.ajax({
+                        type : "POST",
+                        url : url,
+                        data : {
+                                    'type':type,
+                                    '_name':_name,
+                                    '_sex':_sex,
+                                    '_email':_email,
+                                    '_qq':_qq,
+                                    '_git':_git
+                        },   
+                        success : function (ret) {
+                                if (ret == "1") {
+                                    showPopup_RTD();
+
+                                } else if (ret == "2" || ret == "3") {
+                                    showPopup_CTD_DTD();
+                                } else {
+                                    alert('不许重复报名！');
+                                }
+                        }
+                    });
+                }
+            </script>
         </form>
+        
+        <button id="test" onclick="showPopup_RTD()" style="height:4rem;">点击我进行测试《综合技术部》</button>
+            <button id="test2" onclick="showPopup_CTD_DTD()" style="height:4rem;">点击我进行测试《研发部/数技部》</button>
     </div>
 </div>
+<!--新加弹窗部分
+ 提交综合技术部报名表弹窗用showPopup_RTD()函数
+ 研发部和数技部用showPopup_CTD_DTD()函数-->
+<div id="goodcover"></div>
+<div id="Popup_RTD">
+    <span onclick="window.location.href='{% url "Signup_index" %}' ">x</span>
+    <div class="Popup_main">
+        <p>谢天谢地你来了</p>
+        <img src="{% static 'base/img/signUp/u110.jpg' %}">
+        <p>请扫码入群，并将备注改为：年级-专业-姓名<br>（如：15级-软工-XXX）</p>
+    </div>
+</div>
+<div id="Popup_CTD_DTD">
+    <span onclick="window.location.href='{% url "Signup_index" %}' ">x</span>
+    <div class="Popup_main">
+        <p>感谢您的到来<br>结果我们将在2天内邮件通知</p>
+    </div>
+</div>
+<!--新加弹窗部分结束-->
 {% load staticfiles %}
     <!-- <link rel="stylesheet" href="{% static 'base/css/SignUp_RTD_CTD_DTD.css' %}"> -->
     <!-- <script type="text/javascript" src="{% static 'base/js/Public/bootstrap.min.js' %}"></script> -->
