@@ -5,6 +5,7 @@ from django.http import HttpResponse
 import hashlib
 from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
+from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 # def home_user(request, user_id, password):
 #     try:
@@ -19,6 +20,7 @@ from django.core.urlresolvers import reverse
 #     except:
 #         return HttpResponse('Information Error')
 
+@csrf_exempt
 def register(request):
     create_user_root = 16
     if not (request.session.get('root', 0) & create_user_root):
@@ -59,6 +61,7 @@ def login(request):
     except:
         return HttpResponse('Information Error')
 
+@csrf_exempt
 def log_out(request):
     try:
         del request.session['user_name']
@@ -72,6 +75,7 @@ def log_out(request):
     return HttpResponseRedirect(request.session['current_path'])
 
 # 登录验证和编辑用户权限
+@csrf_exempt
 def edit_root(request):
     edit_root_root = 32
     if request.method == 'GET':
@@ -111,7 +115,8 @@ def edit_root(request):
             return render(request, 'User/edit_root.html', info)
         except:
             return HttpResponse('Error2')
-
+        
+@csrf_exempt
 def edit_root_process(request):
     try:
         root = int(request.POST.get('root_1', 0))*2 + int(request.POST.get('root_2', 0))*4 + int(request.POST.get('root_3', 0))*8
@@ -126,6 +131,7 @@ def edit_root_process(request):
     except:
         return HttpResponse('Error')
 
+@csrf_exempt
 def find(request):
     try:
         user_name = request.GET['user_name']
@@ -134,11 +140,11 @@ def find(request):
     except:
         return HttpResponse("not exist")
 
-
+@csrf_exempt
 def change_info(request):
     pass
 
-
+@csrf_exempt
 def check_passwd(request):
 
     passwd = request.GET['password']
