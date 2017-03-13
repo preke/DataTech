@@ -45,6 +45,7 @@
                     var _email= $("input[name='_email']").val()
                     var _qq= $("input[name='_qq']").val()
                     var _git= $("input[name='_git']").val()
+                    var _intr=$("textarea[name='_intr']").val()
                     var url = window.location.href
                     $.ajax({
                         type : "POST",
@@ -55,7 +56,8 @@
                                     '_sex':_sex,
                                     '_email':_email,
                                     '_qq':_qq,
-                                    '_git':_git
+                                    '_git':_git,
+                                    '_intr':_intr
                         },   
                         success : function (ret) {
                                 if (ret == "1") {
