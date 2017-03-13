@@ -22,9 +22,9 @@ def register(request):
     if request.method == 'GET':
         return render(request, 'Signup/register.html')
     else:
-        # print 'in this func'
-        # for k,v in request.POST.items():
-        #     print k, v
+        print 'in this func'
+        for k,v in request.POST.items():
+            print k, v
         member = Member()
         member.Type = request.POST['type']
         member.name = request.POST['_name']
@@ -33,10 +33,8 @@ def register(request):
         member.qq = request.POST['_qq']
         member.github = request.POST['_git']
         member.description = request.POST['_intr']
-        
-        
-        print '-----------------------------------------'
-        print 'POST DATA now:'
+        print '---------------------------------------------'
+        print 'post data'
         print member.Type
         print member.name
         print member.gender
@@ -44,7 +42,7 @@ def register(request):
         print member.qq
         print member.github
         print member.description
-        print '------------------------------------------'
+        print '---------------------------------------------'
         try:
             member.save()
             return HttpResponse( str(member.Type) )
