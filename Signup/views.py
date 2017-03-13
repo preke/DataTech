@@ -32,8 +32,8 @@ def register(request):
         member.email = request.POST['_email']
         member.qq = request.POST['_qq']
         member.github = request.POST['_git']
-        # member.description = request.POST['_intr']
-        print member.Type
+        member.description = request.POST['_intr']
+        # print member.Type
         # print member.name
         # print member.gender
         # print member.email
