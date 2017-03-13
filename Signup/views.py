@@ -33,13 +33,18 @@ def register(request):
         member.qq = request.POST['_qq']
         member.github = request.POST['_git']
         member.description = request.POST['_intr']
-        # print member.Type
-        # print member.name
-        # print member.gender
-        # print member.email
-        # print member.qq
-        # print member.github
-        # print member.description
+        
+        
+        print '-----------------------------------------'
+        print 'POST DATA now:'
+        print member.Type
+        print member.name
+        print member.gender
+        print member.email
+        print member.qq
+        print member.github
+        print member.description
+        print '------------------------------------------'
         try:
             member.save()
             return HttpResponse( str(member.Type) )
